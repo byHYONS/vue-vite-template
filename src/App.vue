@@ -27,7 +27,7 @@ export default {
 <!-- HTML -->
 <template>
   
-  <h1> {{ store.text }}</h1>
+  <h1 class="ta-center mt-20"> {{ store.text }}</h1>
   <newComponent />
 
 </template>
