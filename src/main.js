@@ -1,14 +1,25 @@
-// iport istanza vue:
-import { createApp } from 'vue'
+//? iport istanza vue:
+import { createApp } from 'vue';
 
-// import style scss:
-import './assets/scss/main.scss'
+//? import router:
+import { router } from "./router";
 
-// import typography:
+//? import style scss:
+import './assets/scss/main.scss';
+
+//? import bootstrap:
+import * as bootstrap from 'bootstrap';
+
+//? import typography:
 import '@fontsource/ubuntu-condensed';
 
-// import App Vue:
-import App from './App.vue'
+//? import font-awesome:
+import "@fortawesome/fontawesome-free/js/all.js";
 
-// append createApp in #app:
-createApp(App).mount('#app')
+//? import App Vue:
+import App from './App.vue';
+
+//? append createApp in #app:
+createApp(App)
+    .use(router)
+    .mount('#app');

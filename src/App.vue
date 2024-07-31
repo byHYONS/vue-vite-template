@@ -1,43 +1,35 @@
-<!-- JAVASCRIPT -->
 <script>
 // import:
-import { store } from './store';
-import newComponent from './components/NewComponent.vue';
+import HeaderComponent from './components/HeaderComponent.vue';
+import FooterComponent from './components/FooterComponent.vue';
+
 
 
 export default {
-   nome: 'nameComponent',
-   props: {
-
-   },
-   data(){
-      return{
-        store,
-
-      }
-   },
+   nome: 'App',
    components: {
-      newComponent,
+      HeaderComponent,
+      FooterComponent,
    }
 }
 
 </script>
 
 
-<!-- HTML -->
+
 <template>
   
-  <h1 class="ta-center mt-20"> {{ store.text }}</h1>
-  <newComponent />
+   <!--? HEADER -->
+   <HeaderComponent />
+   
+   <!--? CONTENT -->
+   <router-view></router-view>
+   
+   <!--? FOOTER -->
+   <FooterComponent />
+
 
 </template>
 
 
-<!-- STYLE -->
-<style lang="scss" scoped>
-// import
-
-
-
-</style>
-
+<style lang="scss" scoped></style>

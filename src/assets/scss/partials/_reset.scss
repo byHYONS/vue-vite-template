@@ -1,4 +1,8 @@
-// reset:
+/* --------------------------------
+           * RESET
+-------------------------------- */
+
+//? reset:
 * {padding: 0; margin: 0;}
 *, *::after, *::before {box-sizing: border-box;}
 
@@ -10,5 +14,3 @@ img {
 li {list-style-type: none;}
 
 a {text-decoration: none;}
-
-[v-cloak] {display: none;}
